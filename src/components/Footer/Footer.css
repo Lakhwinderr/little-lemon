@@ -1,0 +1,67 @@
+.footer {
+  height: 486px;
+  background: #f4ce14;
+}
+.doormat1 .links{
+  height: 146px;
+}
+.links ul {
+  flex-direction: column;
+  margin: 0;
+  width: auto;
+  height: 146px;
+    
+}
+
+.doormat {
+  display: flex;
+  flex-direction: column;
+  width: 109px;
+height: 210px;
+justify-content: space-between;
+
+}
+
+.doormat div {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+.linksFrame{
+  display: flex;
+  justify-content: space-between;
+  width: 593px;
+}
+
+.doormat2 {
+  height: 135px;
+
+}
+.doormat2 ul{
+  height: 71px; 
+}
+
+.doormat3{
+  height: 135px;
+
+}
+
+.doormat ul{
+  height: 71px;
+
+}
+.footer img{
+  width: 150px;
+height: 230px;
+}
+
+.footer .container{
+  align-items: flex-start;
+  width: 811px;
+
+}

@@ -1,0 +1,17 @@
+.form{
+    height: 1000px;
+    background-color: #F4CE14;
+   
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 855px;
+    margin: auto;
+   
+}
+form button{
+  align-self: center;
+}

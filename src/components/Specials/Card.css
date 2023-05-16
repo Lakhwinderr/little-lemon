@@ -1,0 +1,112 @@
+.card{
+    width: 257.6px;
+height: 369px;
+background: rgba(73, 94, 87, 0.2);
+border-radius: 13.2952px;
+position: relative;
+}
+
+.card img{
+    width: 257.6px;
+height: 177.44px;
+}
+
+h3{
+    position: absolute;
+/* width: 121px; */
+height: 23px;
+left: 10px;
+top: 192.19px;
+margin: auto;
+
+
+font-family: 'Karla';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+
+}
+
+h4{
+    position: absolute;
+width: 29px;
+height: 19px;
+left: 205.27px;
+top: 192.19px;
+
+/* Sub Section
+
+under section
+*/
+font-family: 'Karla';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+/* lemon yellow */
+
+color: #495E57;
+margin: auto;
+}
+
+
+.card p{
+    position: absolute;
+width: 237.65px;
+height: 85.7px;
+left: 10px;
+top: 230.53px;
+
+/* paragraph
+
+use max 65 character per line.
+*/
+font-family: 'Karla';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+/* lemon green */
+
+color: #495E57;
+
+}
+
+.orderButton{
+    position: absolute;
+
+height: 19px;
+left: 14px;
+top: 317px;
+
+/* Lead text
+
+descriptive items(cta)
+*/
+font-family: 'Karla';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+
+/* lemon green */
+
+color: #495E57;
+width: 182px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.orderButton img{
+
+width: 27px;
+height: 27px;
+}

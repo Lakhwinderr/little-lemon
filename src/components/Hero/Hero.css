@@ -1,0 +1,20 @@
+.hero{
+    height: 581px;
+    background-color: #F4CE14;
+}
+.infoAndButton{
+    width: fit-content;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: greenyellow; */
+}
+
+.container{
+    display: flex;
+    max-width: 855.6px;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 99px;
+}

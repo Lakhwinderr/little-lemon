@@ -1,0 +1,22 @@
+.about {
+  width: 100vw;
+  height: 480px;
+}
+
+.about .container{
+    align-items: center;
+   
+}
+
+.images {
+  width: 370px;
+  height: 343px;
+  position: relative;
+  /* background-color: aqua; */
+}
+
+.a {
+  position: absolute;
+  left: 151px;
+  top: 86px;
+}

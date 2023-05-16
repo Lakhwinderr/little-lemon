@@ -1,0 +1,61 @@
+.testimonialCard{
+    width: 350px;
+height: 151px;
+background: #495E57;
+position: relative;
+}
+
+.stars{
+    position: absolute;
+    width: 104px;
+    height: 20px;
+    left: 9px;
+    top: 11px;
+}
+
+.name{
+    position: absolute;
+width: 100px;
+height: 21px;
+left: 107.21px;
+top: 42.11px;
+
+/* Card Title */
+
+font-family: 'Karla';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.testimonialCard>img{
+    position: absolute;
+width: 84.63px;
+height: 84.33px;
+left: 9.25px;
+top: 42.11px;
+}
+
+.comment{
+    position: absolute;
+width: 233.33px;
+height: 76px;
+left: 108.47px;
+top: 63.46px;
+
+/* paragraph
+
+use max 65 character per line.
+*/
+font-family: 'Karla';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #CAC9C9;
+}

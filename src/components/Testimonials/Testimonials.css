@@ -1,0 +1,19 @@
+.testimonials{
+    height: 586px;
+    background: #F4CE14;
+}
+
+.testimonials .container{
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 328px;
+    max-width: 775px;
+    padding-top: 19px;
+    align-items: normal;
+
+}
+
+.testimonials>h1{
+    text-align: center;
+  padding-top: 33px;
+}

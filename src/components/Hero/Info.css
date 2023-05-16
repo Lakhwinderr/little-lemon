@@ -1,0 +1,18 @@
+.info{
+    /* background-color: aqua; */
+    max-width: 372px;
+    /* position: relative; */
+    height: 262px;
+
+}
+
+h2{
+    /* position: absolute; */
+    margin: auto  ;
+top: 61px;
+}
+p{
+    /* position:absolute; */
+    top: 102px;
+
+}

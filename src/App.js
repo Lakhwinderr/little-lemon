@@ -1,10 +1,19 @@
-import './App.css';
-
+import "./App.css";
+import Header from "./components/Header/Header";
+import Homepage from "./Homepage";
+import { Routes, Route} from "react-router-dom";
+// import Form from "./components/Form/Form"
+import ReserveTable from "./components/ReservaTable/ReserveTable";
 function App() {
   return (
-    <div className="App">
-      <div>HomePage</div>
-    </div>
+    <>
+      <Header></Header>
+      {/* <Homepage></Homepage> */}
+      <Routes>
+            <Route path='/' element = {<Homepage/>}></Route>
+            <Route path = '/reservations' element = {<ReserveTable />}></Route>
+        </Routes>
+    </>
   );
 }
 
