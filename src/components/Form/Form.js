@@ -63,8 +63,9 @@ export default function Form() {
   return (
     <div className="form">
       <form onSubmit={formik.handleSubmit} >
+        <div className="formElement">
         <label htmlFor="firstName">First Name</label>
-        <br />
+        
         <input
           type="text"
           id="firstName"
@@ -72,8 +73,10 @@ export default function Form() {
         />
         {formik.errors.firstName && formik.touched.firstName ? <div>{formik.errors.firstName}</div> : null}
         <br />
+        </div>
+        <div className="formElement">
         <label htmlFor="lastName">Last Name</label>
-        <br />
+        
         <input
           type="text"
           id="lastName"
@@ -81,8 +84,10 @@ export default function Form() {
         />
         {formik.errors.lastName && formik.touched.lastName ? <div>{formik.errors.lastName}</div> : null}
         <br />
+        </div>
+        <div className="formElement">
         <label htmlFor="phoneNumber">Phone Number</label>
-        <br />
+        
         <input
           type="tel"
           id="phoneNumber"
@@ -92,8 +97,11 @@ export default function Form() {
           <div>{formik.errors.phoneNumber}</div>
         ) : null}
         <br />
+        </div>
+        
+        <div className="formElement">
         <label htmlFor="email">Email</label>
-        <br />
+        
         <input
           type="email"
           id="email"
@@ -101,8 +109,10 @@ export default function Form() {
         />
         {formik.errors.email && formik.touched.email ? <div>{formik.errors.email}</div> : null}
         <br />
+        </div>
+        <div className="formElement">
         <label htmlFor="email">Password</label>
-        <br />
+        
         <input
           type="password"
           id="password"
@@ -110,12 +120,16 @@ export default function Form() {
         />
         {formik.errors.password && formik.touched.password ? <div>{formik.errors.password}</div> : null}
         <br />
+        </div>
+        <div className="formElement">
         <label htmlFor="request">
           Request<sup>(Optional)</sup>
         </label>
-        <br />
+      
         <textarea name="request" id="request" cols="30" rows="10"></textarea>
-        <button type="submit">Submit</button>
+        </div>
+        
+        <button className="mainButton" type="submit">Submit</button>
       </form>
     </div>
   );

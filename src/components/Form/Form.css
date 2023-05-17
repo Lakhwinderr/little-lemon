@@ -15,3 +15,52 @@ form{
 form button{
   align-self: center;
 }
+
+form input{
+  box-shadow: none;
+  width: 100%;
+}
+
+.formElement{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+form input:focus{
+  background-color: #495E57;
+  color: white;
+}
+
+form div{
+  color: red;
+  
+}
+
+form label{
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #495e57;
+  width: 100%;
+}
+
+form textarea{
+  /* border: none; */
+  border-radius: 8px;
+  background-color: #edefee;
+  border:none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #495e57;
+  width: 100%;
+  margin: 20px 0;
+}
+form textarea:focus{
+  outline: none;
+  background-color: #495E57;
+  color: white;
+}

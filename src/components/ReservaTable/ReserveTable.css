@@ -1,6 +1,79 @@
 .reserveTable{
     width: 100vw;
-    height: 200px;
+    height: 180px;
+    
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    flex-direction: column;
     background: #F4CE14;
 }
 
+.formItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 755px;
+    margin:0 auto ;
+    padding-top: 20px;
+    
+}
+.backGround{
+    background: #F4CE14;
+    padding-bottom: 40px;
+}
+
+.time{
+    box-sizing: border-box;
+    margin: auto;
+    width: 584px;
+height: 54px;
+left: 0px;
+top: 0px;
+text-align:  center;
+padding-top: 12px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+
+color: #495E57;
+
+background: #D9D9D9;
+border-radius: 8px;
+margin-bottom: 20px;
+}
+
+.message{
+    font-family: 'Karla';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+margin: auto;
+text-align: center;
+padding: 30px 0;
+}
+
+.selectTime{
+    display: none;
+}
+
+.time:hover {
+    background-color: #F4CE14;
+
+}
+
+.time:hover .selectTime{
+    display: block;
+}
+.time:hover .onlyTime{
+    display: none;
+}

@@ -5,7 +5,7 @@ const Button = () => {
     const routeChange = () => {
         navigate('/reservations')
     }
-    return <button onClick = {routeChange}>Reserve a Table</button>
+    return <button className='mainButton' onClick = {routeChange}>Reserve a Table</button>
 }
 
 export default Button;

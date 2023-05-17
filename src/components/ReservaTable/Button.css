@@ -1,99 +1,76 @@
-.buttonWrapper{
-    width: 400px;
+.buttonWrapper {
+  width: 300px;
 }
-button{
-    border: none;
-    border-radius: 0;
+.buttonContainer{
+    width: inherit ;
+    display: flex;
+    justify-content: space-around;
 }
-.button{
-
-    width: 400px;
-height: 80px;
-left: 0px;
-top: 0px;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-background: #EDEFEE;
-/* transform: scale(0.7); */
-position: relative;
-
+button {
+  border: none;
+  border-radius: 0;
 }
 
+.button {
+  width: 300px;
+  height: 50px;
+  
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-
-.glass{
-    position: absolute;
-width: 54.05px;
-height: 37.09px;
-left: 22px;
-top: 21px;
+  background: #edefee;
+  /* transform: scale(0.7); */
+  position: relative;
 }
 
-.word{
-    position: absolute;
-width: 111px;
-height: 29px;
-left: 145px;
-top: 24px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 29px;
-/* identical to box height */
-
-
-color: #495E57;
-}
-.chevron{
-    position: absolute;
-width: 15px;
-height: 7.5px;
-transform: scale(1.4);
-left: 333px;
-top: 36px;
-transition: 1s;
+.glass {
+  width: 40px;
 }
 
-.transformChevron{
-    position: absolute;
-width: 15px;
-height: 7.5px;
-left: 333px;
-top: 36px;
-    transform: scale(1.4) rotateZ(180deg);
-    transition: 0.5s;
-}
- .top{
-    margin-bottom: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
+.word {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
 
+  color: #495e57;
+}
+.chevron {
+  transition: 1s;
 }
 
-.dropDown{
-    animation: fadeIn 0.5s;
-    position: relative;
+.transformChevron {
+  transform: rotateZ(180deg);
+  transition: 0.5s;
+}
+.top {
+  margin-bottom: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 }
 
+.dropDown {
+  animation: fadeIn 0.5s;
+  position: relative;
+}
 
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
- } 
-
-.button:not(.top, .bottom){
-    border-bottom: 1px dashed #000000;
-
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.button:not(.top):hover{
-    background-color: #495E57;
-   
-}
-.button:not(.top):hover .word{
-    color: #EDEFEE;
-   
+.button:not(.top, .bottom) {
+  border-bottom: 1px dashed #000000;
 }
 
+.button:not(.top):hover {
+  background-color: #495e57;
+}
+.button:not(.top):hover .word {
+  color: #edefee;
+}
