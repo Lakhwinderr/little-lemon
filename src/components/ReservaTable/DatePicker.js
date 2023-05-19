@@ -11,19 +11,19 @@ export default function DatePicker({dataHandler}) {
       ? `0${date.getUTCDate()}`
       : date.getUTCDate()
   }`;
-  useEffect(() => {
+  // useEffect(() => {
     
-    const today = `${date.getUTCFullYear()}-${
-      (date.getUTCMonth() + 1).toString().length < 2
-        ? `0${date.getUTCMonth() + 1}`
-        : date.getUTCMonth() + 1
-    }-${
-      date.getUTCDate().toString().length < 2
-        ? `0${date.getUTCDate()}`
-        : date.getUTCDate()
-    }`;
-    console.log(today);
-  });
+  //   const today = `${date.getUTCFullYear()}-${
+  //     (date.getUTCMonth() + 1).toString().length < 2
+  //       ? `0${date.getUTCMonth() + 1}`
+  //       : date.getUTCMonth() + 1
+  //   }-${
+  //     date.getUTCDate().toString().length < 2
+  //       ? `0${date.getUTCDate()}`
+  //       : date.getUTCDate()
+  //   }`;
+  //   console.log(today);
+  // });
 
   
   return (

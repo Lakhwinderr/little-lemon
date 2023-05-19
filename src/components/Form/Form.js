@@ -2,13 +2,14 @@ import React from "react";
 import { useFormik } from "formik";
 import './Form.css'
 export default function Form() {
+  const errors = {};
   const validate = (values) => {
-    const errors = {};
+    // const errors = {};
 
     if (!values.firstName) {
       errors.firstName = "Required";
     } else if (values.firstName.length > 15) {
-      errors.firstName = "Must be les than 15 characters.";
+      errors.firstName = "Must be less than 15 characters.";
     }
 
     if (!values.lastName) {
@@ -58,6 +59,7 @@ export default function Form() {
     validate,
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
+      formik.resetForm();
     },
   });
   return (
@@ -126,10 +128,10 @@ export default function Form() {
           Request<sup>(Optional)</sup>
         </label>
       
-        <textarea name="request" id="request" cols="30" rows="10"></textarea>
+        <textarea id="request" cols="30" rows="10" {...formik.getFieldProps("request")}></textarea>
         </div>
         
-        <button className="mainButton" type="submit">Submit</button>
+        <button className="mainButton" type="submit" disabled = {Object.keys(errors).length !== 0}>Next</button>
       </form>
     </div>
   );

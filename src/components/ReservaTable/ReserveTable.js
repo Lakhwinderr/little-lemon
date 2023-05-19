@@ -7,6 +7,7 @@ import Button from "./Button";
 import DatePicker from "./DatePicker";
 import DinerCount from "./DinerCount";
 import IndoorOutdoor from "./IndoorOutdoor";
+import Form2 from "../Form2/Form2";
 const seededRandom = function (seed) {
   var m = 2 ** 35 - 31;
   var a = 185852;
@@ -99,6 +100,7 @@ export default function ReserveTable() {
       <div className="message">{message}</div>
       {times}
       <Form/>
+      <Form2/>
       <About/>
          <Footer/> 
     </>

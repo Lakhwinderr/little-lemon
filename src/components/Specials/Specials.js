@@ -9,7 +9,7 @@ const Specials = () => {
     <div className="specials" id = "specials">
       <div className="container div1">
         <h1>Specials!</h1>
-        <button>Order Online</button>
+        <button className="mainButton">Order Online</button>
         
       </div>
       <div className="container div2">
