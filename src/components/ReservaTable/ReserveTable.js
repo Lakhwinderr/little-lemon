@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./ReserveTable.css";
-import Form from "../Form/Form";
-import Footer from "../Footer/Footer"
-import About from "../About/About"
+import Footer from "../Footer/Footer";
+import About from "../About/About";
 import Button from "./Button";
 import DatePicker from "./DatePicker";
 import DinerCount from "./DinerCount";
 import IndoorOutdoor from "./IndoorOutdoor";
-import Form2 from "../Form2/Form2";
+// import { type } from "@testing-library/user-event/dist/type";
+// import MainForm from "../MainForm/MainForm";
 const seededRandom = function (seed) {
   var m = 2 ** 35 - 31;
   var a = 185852;
@@ -35,15 +35,16 @@ const submitAPI = function (formData) {
   return true;
 };
 
-export default function ReserveTable() {
-  const date = new Date();
+export default function ReserveTable({ updateProgress, updateData }) {
+  // const date = new Date();
   const [data, setData] = useState({
     count: 1,
     date: "",
     location: "",
     ocassion: "",
+    time: "",
   });
-  const[times, setTimes] = useState([]);
+  const [times, setTimes] = useState([]);
   const dataHandler = (dataRecieved) => {
     switch (dataRecieved.type) {
       case "count":
@@ -56,19 +57,34 @@ export default function ReserveTable() {
         return setData({ ...data, ocassion: dataRecieved.value });
     }
   };
-  useEffect(() => {
-    // console.log(fetchAPI(date));
-    console.log(data);
-  }, [data]);
 
-  const [message,setMessage]  = useState("")
+
+  const [message, setMessage] = useState("");
+
+
   const submitData = () => {
-    setTimes(fetchAPI(new Date(data.date)).map(time => {return <div className="time" onClick={() => {alert("div is clicked")}}>
-        <div className="selectTime">{`SELECT ${time}`}</div>
-        <div className="onlyTime">{time}</div>
-        </div>}))
-   setMessage("Following times are available for your choice of reservation.");
-}
+    setTimes(
+      fetchAPI(new Date(data.date)).map((t) => {
+        return (
+          <div
+            className="time"
+            onClick={() => {
+              console.log(t)
+              setData({...data, time: t})
+              console.log(data)
+              updateData(data);
+              updateProgress(1);
+            }}
+            key={t}
+          >
+            <div className="selectTime">{`SELECT ${t}`}</div>
+            <div className="onlyTime">{t}</div>
+          </div>
+        );
+      })
+    );
+    setMessage("Following times are available for your choice of reservation.");
+  };
   return (
     <>
       <div className="reserveTable">
@@ -85,24 +101,28 @@ export default function ReserveTable() {
       </div>
       <div className="backGround">
         <div className="formItems">
-
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <button className="mainButton" disabled = {!data.date} onClick={
-            () =>{
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <button
+              className="mainButton"
+              disabled={!data.date}
+              onClick={() => {
                 // alert(JSON.stringify(data))
-                submitData()
-            }
-          }>Submit</button>
-          <div style={{marginLeft : "5px"}}>{!data.date ? "(Please select valid date.)" : null}</div>
-        </div>
+                submitData();
+              }}
+            >
+              Submit
+            </button>
+            <div style={{ marginLeft: "5px" }}>
+              {!data.date ? "(Please select valid date.)" : null}
+            </div>
+          </div>
         </div>
       </div>
       <div className="message">{message}</div>
       {times}
-      <Form/>
-      <Form2/>
-      <About/>
-         <Footer/> 
+
+      <About />
+      <Footer />
     </>
   );
 }

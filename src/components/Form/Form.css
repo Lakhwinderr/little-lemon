@@ -28,8 +28,8 @@ form input{
   margin: auto;
 }
 form input:focus{
-  background-color: #495E57;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 form div{

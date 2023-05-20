@@ -1,0 +1,23 @@
+.slider{
+    background-color:#F4CE14;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one, .two{
+    width: 76px;
+    height: 7px;
+    background-color: #0000001b;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.complete{
+    background-color: #495e57;
+}
+
+.hide{
+    display: none;
+}

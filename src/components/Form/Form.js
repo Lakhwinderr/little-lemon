@@ -1,7 +1,7 @@
 import React from "react";
 import { useFormik } from "formik";
 import './Form.css'
-export default function Form() {
+export default function Form({updateProgress, updateData}) {
   const errors = {};
   const validate = (values) => {
     // const errors = {};
@@ -47,6 +47,13 @@ export default function Form() {
     }
     return errors;
   };
+
+  const valid = () => {
+    if(formik.values.firstName && formik.values.lastName && formik.values.phoneNumber && formik.values.email && formik.values.password && (Object.keys(errors).length === 0)){
+        return false;
+    }
+    return true;
+  }
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -58,8 +65,11 @@ export default function Form() {
     },
     validate,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      // alert(JSON.stringify(values, null, 2));
+      updateData(values);
       formik.resetForm();
+      updateProgress(2);
+      updateData(values);
     },
   });
   return (
@@ -131,7 +141,7 @@ export default function Form() {
         <textarea id="request" cols="30" rows="10" {...formik.getFieldProps("request")}></textarea>
         </div>
         
-        <button className="mainButton" type="submit" disabled = {Object.keys(errors).length !== 0}>Next</button>
+        <button className="mainButton" type="submit" disabled = {valid()}>Next</button>
       </form>
     </div>
   );

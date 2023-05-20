@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useFormik } from "formik";
 // import "./Form.css";
-export default function Form2() {
+export default function Form2({updateProgress, updateData}) {
   const date = new Date();
   const today = `${date.getUTCFullYear()}-${
     (date.getUTCMonth() + 1).toString().length < 2
@@ -56,8 +56,11 @@ export default function Form2() {
     },
     validate,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      // alert(JSON.stringify(values, null, 2));
+      updateData(values);
       formik.resetForm();
+      updateProgress(3);
+      updateData(values);
     },
   });
   return (
