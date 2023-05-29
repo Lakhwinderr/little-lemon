@@ -64,25 +64,7 @@ export default function ReserveTable({ updateProgress, updateData }) {
 
   const submitData = () => {
     setTimes(
-      fetchAPI(new Date(data.date)).map((t) => {
-        return (
-          <div
-            className="time"
-            onClick={() => {
-              console.log(t)
-              setData({...data, time: t})
-              console.log(data)
-              updateData(data);
-              updateProgress(1);
-            }}
-            key={t}
-          >
-            <div className="selectTime">{`SELECT ${t}`}</div>
-            <div className="onlyTime">{t}</div>
-          </div>
-        );
-      })
-    );
+      fetchAPI(new Date(data.date)));
     setMessage("Following times are available for your choice of reservation.");
   };
   return (
@@ -119,7 +101,24 @@ export default function ReserveTable({ updateProgress, updateData }) {
         </div>
       </div>
       <div className="message">{message}</div>
-      {times}
+      {times.map((t) => {
+        return (
+          <div
+            className="time"
+            onClick={() => {
+              console.log(t)
+              setData(p => ({...p, time: t}))
+              console.log(data)
+              updateData(data);
+              updateProgress(1);
+            }}
+            key={t}
+          >
+            <div className="selectTime">{`SELECT ${t}`}</div>
+            <div className="onlyTime">{t}</div>
+          </div>)
+      })
+    }
 
       <About />
       <Footer />
