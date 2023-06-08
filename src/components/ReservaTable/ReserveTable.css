@@ -77,3 +77,29 @@ padding: 30px 0;
 .time:hover .onlyTime{
     display: none;
 }
+
+.buttonAndDiv{
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width: 600px){
+    .reserveTable{
+        height: fit-content;
+    }
+    .formItems{
+        all:unset;
+        margin: 10px 0px;
+    }
+    .buttonAndDiv{
+        flex-direction: column;
+    }
+    .buttonAndDiv .mainButton{
+        margin-bottom: 10px;
+    }
+    .message{
+        margin: 0 40px;
+    }
+    .time{
+        width: 80vw;
+    }
+}

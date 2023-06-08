@@ -43,3 +43,46 @@ li {
 a:hover {
   text-decoration: underline;
 }
+
+
+@media only screen and (max-width: 600px){
+  .header{
+    justify-content: flex-start;
+  }
+  .header ul{
+    all: unset;
+    background-color: white;
+    width: 100vw;
+  }
+  nav{
+    z-index: 1;
+    position:absolute;
+    top: 90px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .header li{
+    margin: 40px 40px;
+  }
+  .header img{
+    margin-left:40px;
+  }
+
+  .bars{
+    position: absolute;
+    right: 40px;
+    height: 30px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .bar{
+    border-radius: 4px;
+    width: inherit;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.678);
+  }
+}

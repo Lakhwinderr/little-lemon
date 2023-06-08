@@ -1,3 +1,4 @@
+import { useState } from "react";
 import logo from "../../assets/Logo.svg";
 import "./Header.css";
 import { Link } from "react-router-dom";
@@ -28,10 +29,20 @@ const Header = () => {
 //       element.scrollIntoView({ behavior: "smooth", block: "start" });
 //     }
 //   };
+const [panel, setPanel] = useState(false)
+
+const myStyle = {
+  display: panel ? "flex" : "none"
+}
   return (
-    <div className="header">
+    <div className="header" onClick={() => {setPanel(p => !p)}}>
       <img src={logo} alt="logo" />
-      <nav>
+      <div className="bars">
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+      <nav style={myStyle}>
         <ul>
           {/* <li><a href="#">Home</a></li> */}
           <li>

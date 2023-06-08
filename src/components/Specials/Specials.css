@@ -34,3 +34,22 @@ align-items: center; */
 .div2{
     padding-top: 24px;
 }
+@media only screen and (max-width: 600px){
+    .specials{
+        padding: 0 50px;
+        height: fit-content;
+    }
+    .specials .container{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .specials .mainButton{
+        margin-top: 20px;
+
+    }
+
+    .div2{
+        align-items: center;
+    }
+}

@@ -16,3 +16,10 @@ p{
     top: 102px;
 
 }
+
+@media only screen and (max-width: 600px){
+    .info{
+        height: fit-content;
+        margin-bottom: 30px;
+    }
+}

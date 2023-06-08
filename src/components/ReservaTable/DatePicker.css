@@ -29,6 +29,24 @@ input {
   border-radius: 8px;
 }
 
-input:focus{
-  outline:none;
+input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .datePicker input {
+    display: block;
+    appearance: none;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    height: 50px;
+  line-height: 50px;
+  text-align: center;
+    
+  }
+  .datePicker{
+    justify-self: center;
+    align-items: center;
+  }
 }

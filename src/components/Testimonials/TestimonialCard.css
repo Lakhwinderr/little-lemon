@@ -3,6 +3,7 @@
 height: 151px;
 background: #495E57;
 position: relative;
+border-radius: 4px;
 }
 
 .stars{
@@ -58,4 +59,11 @@ font-size: 16px;
 line-height: 19px;
 
 color: #CAC9C9;
+}
+
+@media only screen and (max-width: 600px){
+    .testimonialCard{
+        margin: auto;
+        margin-bottom: 40px;
+    }
 }

@@ -18,3 +18,28 @@
     margin: auto;
     padding-top: 99px;
 }
+
+@media only screen and (max-width: 600px){
+    .hero .container{
+        padding-top: 70px;
+        position: relative;
+        
+    }
+    .hero{
+        padding: 0 40px;
+    }
+
+    .hero img{
+        display: none;
+    }
+
+    .infoAndButton{
+        position: absolute;
+        left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  align-items: center;
+
+    }
+}

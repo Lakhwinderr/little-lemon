@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./ReserveTable.css";
-import Footer from "../Footer/Footer";
-import About from "../About/About";
 import Button from "./Button";
 import DatePicker from "./DatePicker";
 import DinerCount from "./DinerCount";
@@ -40,7 +38,7 @@ export default function ReserveTable({ updateProgress, updateData }) {
   const [data, setData] = useState({
     count: 1,
     date: "",
-    location: "",
+    location: "indoor",
     ocassion: "",
     time: "",
   });
@@ -54,13 +52,18 @@ export default function ReserveTable({ updateProgress, updateData }) {
       case "location":
         return setData({ ...data, location: dataRecieved.value });
       case "ocassion":
-        return setData({ ...data, ocassion: dataRecieved.value });
+        return   dataRecieved.value === "Ocassion" ? setData({ ...data, ocassion:"None"}) : setData({ ...data, ocassion: dataRecieved.value });
+      
     }
   };
 
 
   const [message, setMessage] = useState("");
 
+  const updateTime = (t) => {
+    console.log(t)
+    setData({...data, time : t})
+  }
 
   const submitData = () => {
     setTimes(
@@ -83,7 +86,7 @@ export default function ReserveTable({ updateProgress, updateData }) {
       </div>
       <div className="backGround">
         <div className="formItems">
-          <div style={{ display: "flex", alignItems: "center" }}>
+          <div className = "buttonAndDiv">
             <button
               className="mainButton"
               disabled={!data.date}
@@ -106,8 +109,7 @@ export default function ReserveTable({ updateProgress, updateData }) {
           <div
             className="time"
             onClick={() => {
-              console.log(t)
-              setData(p => ({...p, time: t}))
+              updateTime(t);
               console.log(data)
               updateData(data);
               updateProgress(1);
@@ -120,8 +122,6 @@ export default function ReserveTable({ updateProgress, updateData }) {
       })
     }
 
-      <About />
-      <Footer />
     </>
   );
 }

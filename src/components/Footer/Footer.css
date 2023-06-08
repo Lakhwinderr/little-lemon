@@ -56,7 +56,7 @@ justify-content: space-between;
 
 }
 .footer img{
-  width: 150px;
+  
 height: 230px;
 }
 
@@ -64,4 +64,29 @@ height: 230px;
   align-items: flex-start;
   width: 811px;
 
+}
+
+@media only screen and (max-width: 600px){
+  .footer img{
+    display: none;
+  }
+  .footer{
+    height: fit-content;
+  }
+  .footer .container, .linksFrame{
+    flex-direction: column;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .doormat{
+    all: unset;
+  }
+
+  .linksFrame{
+    margin: 50px 50px;
+  }
+  .links{
+    margin-top: 10px;
+  }
 }

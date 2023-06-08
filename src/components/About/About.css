@@ -20,3 +20,19 @@
   left: 151px;
   top: 86px;
 }
+
+@media only screen and (max-width: 600px){
+  .about{
+    height: fit-content;
+  }
+  .about .container{
+    padding: 40px 0;
+    margin: 0 30px;
+    flex-direction: column;
+
+  }
+
+  .images{
+    width: 100%;
+  }
+}
