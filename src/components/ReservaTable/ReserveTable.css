@@ -1,5 +1,5 @@
 .reserveTable{
-    width: 100vw;
+   
     height: 180px;
     
     display: flex;
@@ -82,7 +82,7 @@ padding: 30px 0;
     display: flex;
     align-items: center;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 675px){
     .reserveTable{
         height: fit-content;
     }
@@ -101,5 +101,25 @@ padding: 30px 0;
     }
     .time{
         width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 950px) and (min-width: 675px){
+    .reserveTable{
+        flex-direction: row;
+        height: fit-content;
+        justify-content: center;
+    }
+    .formItems{
+        all:unset;
+        margin: 10px 0px;
+    }
+    .buttonAndDiv{
+        flex-direction: column;
+    }
+    .formItems{
+        all:unset;
+        padding: 10px 10px;
+        flex-wrap: wrap;
     }
 }

@@ -34,6 +34,19 @@ align-items: center; */
 .div2{
     padding-top: 24px;
 }
+
+@media only screen and (max-width: 850px){
+    .specials{
+        padding: 0 50px;
+        height: fit-content;
+    }
+    .specials .container{
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
 @media only screen and (max-width: 600px){
     .specials{
         padding: 0 50px;

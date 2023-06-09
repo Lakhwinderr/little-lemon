@@ -19,7 +19,7 @@
     padding-top: 99px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 784px){
     .hero .container{
         padding-top: 70px;
         position: relative;
@@ -42,4 +42,21 @@
   align-items: center;
 
     }
+}
+
+@media only screen and (max-width: 950px) and (min-width: 784px){
+    .hero .container{
+        display: flex;
+        padding: 99px 50px;
+        justify-content: center;
+    }
+    .infoAndButton{
+        margin-right: 40px;
+    }
+    .hero img{
+        width: 30vw;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
 }

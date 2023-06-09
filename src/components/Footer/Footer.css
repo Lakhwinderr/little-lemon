@@ -60,9 +60,13 @@ justify-content: space-between;
 height: 230px;
 }
 
-.footer .container{
+.footerContainer{
+  display: flex;
   align-items: flex-start;
   width: 811px;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 50px;
 
 }
 
@@ -73,7 +77,7 @@ height: 230px;
   .footer{
     height: fit-content;
   }
-  .footer .container, .linksFrame{
+  .footerContainer, .linksFrame{
     flex-direction: column;
     width: auto;
     padding: 0;
@@ -88,5 +92,26 @@ height: 230px;
   }
   .links{
     margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 950px) and (min-width: 600px){
+  .footerContainer{
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 0;
+  }
+  .linksFrame{
+    all: unset;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  .doormat{
+    margin: 0 40px;
+  }
+
+  .footer{
+    padding: 0 50px;
   }
 }

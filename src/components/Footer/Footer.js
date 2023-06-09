@@ -3,7 +3,7 @@ import logo from "../../assets/logo.png";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="container">
+      <div className="footerContainer">
         <img src={logo} alt="logo" />
         <div className="linksFrame">
           <div className="doormat doormat1">

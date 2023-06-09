@@ -12,6 +12,7 @@
 .header img{
   height: 40px;
 }
+
 nav {
   display: flex;
   align-items: center;
@@ -45,7 +46,7 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
   .header{
     justify-content: flex-start;
   }
@@ -53,6 +54,10 @@ a:hover {
     all: unset;
     background-color: white;
     width: 100vw;
+  }
+
+  .active{
+    display: none;
   }
   nav{
     z-index: 1;
@@ -85,4 +90,5 @@ a:hover {
     height: 3px;
     background-color: rgba(0, 0, 0, 0.678);
   }
+  
 }

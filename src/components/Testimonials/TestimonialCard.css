@@ -67,3 +67,9 @@ color: #CAC9C9;
         margin-bottom: 40px;
     }
 }
+
+@media only screen and (max-width: 950px) and (min-width: 600px){
+    .testimonialCard{
+        margin: 20px;
+    }
+}

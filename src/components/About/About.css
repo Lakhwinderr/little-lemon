@@ -36,3 +36,14 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 950px) and (min-width: 600px){
+  .about{
+    height: fit-content;
+  }
+  .container{
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 99px 50px;
+  }
+}
