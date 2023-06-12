@@ -20,32 +20,44 @@ const Header = () => {
         <ul>
     
           <li>
-            <Link to="/" className="nav-item">
+            <Link to="/" className="nav-item" onClick = {() => {
+        setToggle(p => !p)
+      }}>
               Homepage
             </Link>
           </li>
           {}
           <li>
-            <HashLink to="/#about" smooth className="nav-item">
+            <HashLink to="/#about" smooth className="nav-item" onClick = {() => {
+        setToggle(p => !p)
+      }}>
               About
             </HashLink>
           </li>
           <li>
-            <a href="#">Menu</a>
+            <a href="#" onClick = {() => {
+        setToggle(p => !p)
+      }}>Menu</a>
           </li>
           <li>
             {}
-            <Link to="/reservations" className="nav-item">
+            <Link to="/reservations" className="nav-item" onClick = {() => {
+        setToggle(p => !p)
+      }}>
               Reservations
             </Link>
           </li>
           <li>
-            <HashLink to="/#specials" smooth className="nav-item">
+            <HashLink to="/#specials" smooth className="nav-item" onClick = {() => {
+        setToggle(p => !p)
+      }}>
               Order Online
             </HashLink>
           </li>
           <li>
-            <a href="#">Login</a>
+            <a href="#" onClick = {() => {
+        setToggle(p => !p)
+      }}>Login</a>
           </li>
         </ul>
       </nav>

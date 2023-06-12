@@ -61,7 +61,7 @@ export default function ReserveTable({ updateProgress, updateData }) {
   const [message, setMessage] = useState("");
 
   const updateTime = (t) => {
-    console.log(t)
+    // console.log(t)
     setData({...data, time : t})
   }
 
@@ -88,6 +88,7 @@ export default function ReserveTable({ updateProgress, updateData }) {
         <div className="formItems">
           <div className = "buttonAndDiv">
             <button
+            data-testid = "button1"
               className="mainButton"
               disabled={!data.date}
               onClick={() => {
@@ -125,3 +126,4 @@ export default function ReserveTable({ updateProgress, updateData }) {
     </>
   );
 }
+
