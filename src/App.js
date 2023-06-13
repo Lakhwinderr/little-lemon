@@ -11,8 +11,8 @@ function App() {
       <Header></Header>
       {/* <Homepage></Homepage> */}
       <Routes>
-            <Route path='/' element = {<Homepage/>}></Route>
-            <Route path = '/reservations' element = {<MainForm />}></Route>
+            <Route path='/little-lemon' element = {<Homepage/>}></Route>
+            <Route path = '/little-lemon/reservations' element = {<MainForm />}></Route>
             
         </Routes>
     </>
