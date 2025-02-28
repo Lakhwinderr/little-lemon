@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/little-lemon/static/css/main.d6ee7aab.css",
-    "main.js": "/little-lemon/static/js/main.fd6a5904.js",
+    "main.js": "/little-lemon/static/js/main.7c20eb63.js",
     "static/js/787.a2f6b77c.chunk.js": "/little-lemon/static/js/787.a2f6b77c.chunk.js",
     "static/media/restauranfood.png": "/little-lemon/static/media/restauranfood.1e2242a672174f0c2108.png",
     "static/media/logo.png": "/little-lemon/static/media/logo.215df87837073a73cb27.png",
@@ -11,6 +11,9 @@
     "static/media/2.png": "/little-lemon/static/media/2.e64c2aa8fc1758aa0a3c.png",
     "static/media/Logo.svg": "/little-lemon/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
     "static/media/3.png": "/little-lemon/static/media/3.2307fbb350c7b4204563.png",
+    "static/media/person2.jpg": "/little-lemon/static/media/person2.ccdcea01362423e8e2bf.jpg",
+    "static/media/person3.jpg": "/little-lemon/static/media/person3.ba5a7f9f30d58ab385d9.jpg",
+    "static/media/person4.jpg": "/little-lemon/static/media/person4.fa4be855aa1466a1fcb3.jpg",
     "static/media/person1.png": "/little-lemon/static/media/person1.56ec942aa9d3dacdcbe9.png",
     "static/media/bike.svg": "/little-lemon/static/media/bike.bf3baac87866b2e65d4a649988c5f636.svg",
     "index.html": "/little-lemon/index.html",
@@ -18,11 +21,11 @@
     "static/media/star.svg": "/little-lemon/static/media/star.43df39375ba942d4fbfa4ab0e1bce082.svg",
     "static/media/Vector 1.svg": "/little-lemon/static/media/Vector 1.11f47331257d5d85e26be8827f4fe31f.svg",
     "main.d6ee7aab.css.map": "/little-lemon/static/css/main.d6ee7aab.css.map",
-    "main.fd6a5904.js.map": "/little-lemon/static/js/main.fd6a5904.js.map",
+    "main.7c20eb63.js.map": "/little-lemon/static/js/main.7c20eb63.js.map",
     "787.a2f6b77c.chunk.js.map": "/little-lemon/static/js/787.a2f6b77c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d6ee7aab.css",
-    "static/js/main.fd6a5904.js"
+    "static/js/main.7c20eb63.js"
   ]
 }
