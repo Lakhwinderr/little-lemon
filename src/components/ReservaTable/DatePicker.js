@@ -31,7 +31,7 @@ export default function DatePicker({dataHandler}) {
       {/* <label>
         Date:
       </label> */}
-        <input data-testid = "datePicker" type="date" value={today} name="date" min={today} max="2024-04-30" onChange={(e) => {
+        <input data-testid = "datePicker" type="date" value={today} name="date" min={today} max="2099-04-30" onChange={(e) => {
           dataHandler({type:"date", value: e.target.value})
         }}/>
     </div>

@@ -12,8 +12,8 @@ describe("Reserve Table form", () => {
 
     test("submit is active on selecting the valid date", ()=>{
 
-        const dateInput = screen.queryAllByTestId("datePicker");
-        fireEvent.change(dateInput,{target:   {value: "2023-07-22"}})
+        const dateInput = screen.queryByTestId("datePicker");
+        fireEvent.change(dateInput,{target:   {value: "2025-07-22"}})
         const submitButton = screen.queryByTestId("button1")
     fireEvent.click(submitButton);
      expect(submitButton).toBeEnabled();
