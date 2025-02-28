@@ -2,15 +2,7 @@ import React, { useEffect } from "react";
 import './DatePicker.css'
 export default function DatePicker({dataHandler}) {
   const date = new Date();
-  const today = `${date.getUTCFullYear()}-${
-    (date.getUTCMonth() + 1).toString().length < 2
-      ? `0${date.getUTCMonth() + 1}`
-      : date.getUTCMonth() + 1
-  }-${
-    date.getUTCDate().toString().length < 2
-      ? `0${date.getUTCDate()}`
-      : date.getUTCDate()
-  }`;
+  const today = date.toISOString().split('T')[0];
   // useEffect(() => {
     
   //   const today = `${date.getUTCFullYear()}-${

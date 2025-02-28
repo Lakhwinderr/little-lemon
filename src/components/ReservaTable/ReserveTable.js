@@ -60,8 +60,8 @@ export default function ReserveTable({ updateProgress, updateData }) {
   const [message, setMessage] = useState("");
 
   const updateTime = (t) => {
-    // console.log(t)
-    setData({...data, time : t})
+    setData((prevData) => ({ ...prevData, time: t }));
+    updateData({ ...data, time: t });
   }
 
   const submitData = () => {
@@ -109,9 +109,9 @@ export default function ReserveTable({ updateProgress, updateData }) {
           <div
             className="time"
             onClick={() => {
+              console.log(t)
               updateTime(t);
-              console.log(data)
-              updateData(data);
+              console.log(data);
               updateProgress(1);
             }}
             key={t}

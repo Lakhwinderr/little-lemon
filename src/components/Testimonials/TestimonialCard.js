@@ -14,7 +14,7 @@ const TestimonialCard = (props) => {
         </div>
         <img src={props.image} alt="" />
         <div className="name">
-            Lakhwinder
+            {props.name}
         </div>
         <div className="comment">
         {props.comment}
